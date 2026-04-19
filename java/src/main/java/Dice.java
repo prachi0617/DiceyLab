@@ -12,11 +12,10 @@ public class Dice {
         this.random = new Random();
     }
 
-    // Toss all dice and return sum
     public int tossAndSum() {
         int sum = 0;
         for (int i = 0; i < numberOfDice; i++) {
-            sum += random.nextInt(6) + 1; // 1–6
+            sum += random.nextInt(6) + 1;
         }
         return sum;
     }
